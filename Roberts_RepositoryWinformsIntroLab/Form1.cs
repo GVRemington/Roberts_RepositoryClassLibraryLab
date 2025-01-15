@@ -6,7 +6,7 @@ namespace Roberts_RepositoryWinformsIntroLab
     {
         private void LoadProducts()
         {
-            IProductRepository repository = new ProductRepository(_connectionString);
+            //IProductRepository repository = new ProductRepository(_connectionString);
         }
         public frmAddProduct()
         {
@@ -16,6 +16,13 @@ namespace Roberts_RepositoryWinformsIntroLab
         public void btnAddProduct_Click(object sender, EventArgs e)
         {
             var product = new Product();
+            {
+                product.Name = txtProdName.Text;
+                product.Price = decimal.Parse(txtProdPrice.Text);
+                product.Stock = int.Parse(txtProdStock.Text);
+
+            }
+            //IProductRepository repository = new ProductRepository(_connectionString);
 
 
         }

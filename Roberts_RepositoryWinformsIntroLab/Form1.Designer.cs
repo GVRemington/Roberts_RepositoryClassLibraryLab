@@ -29,87 +29,91 @@
         private void InitializeComponent()
         {
             btnAddProduct = new Button();
-            lblProductName = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtProdName = new TextBox();
+            txtProdPrice = new TextBox();
+            txtProdStock = new TextBox();
             lblProductPrice = new Label();
             lblProductStock = new Label();
+            lblProductName = new Label();
             SuspendLayout();
             // 
             // btnAddProduct
             // 
-            btnAddProduct.Location = new Point(167, 203);
+            btnAddProduct.Location = new Point(352, 250);
+            btnAddProduct.Margin = new Padding(2);
             btnAddProduct.Name = "btnAddProduct";
-            btnAddProduct.Size = new Size(150, 34);
+            btnAddProduct.Size = new Size(85, 20);
             btnAddProduct.TabIndex = 0;
             btnAddProduct.Text = "AddProduct";
             btnAddProduct.UseVisualStyleBackColor = true;
             btnAddProduct.Click += btnAddProduct_Click;
             // 
-            // lblProductName
+            // txtProdName
             // 
-            lblProductName.AutoSize = true;
-            lblProductName.Location = new Point(45, 40);
-            lblProductName.Name = "lblProductName";
-            lblProductName.Size = new Size(126, 25);
-            lblProductName.TabIndex = 1;
-            lblProductName.Text = "Product Name";
-            lblProductName.Click += label1_Click;
+            txtProdName.Location = new Point(352, 124);
+            txtProdName.Margin = new Padding(2);
+            txtProdName.Name = "txtProdName";
+            txtProdName.Size = new Size(85, 23);
+            txtProdName.TabIndex = 9;
             // 
-            // textBox1
+            // txtProdPrice
             // 
-            textBox1.Location = new Point(167, 37);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 2;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtProdPrice.Location = new Point(352, 166);
+            txtProdPrice.Margin = new Padding(2);
+            txtProdPrice.Name = "txtProdPrice";
+            txtProdPrice.Size = new Size(85, 23);
+            txtProdPrice.TabIndex = 8;
             // 
-            // textBox2
+            // txtProdStock
             // 
-            textBox2.Location = new Point(167, 88);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 3;
-            textBox2.TextChanged += textBox2_TextChanged;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(167, 143);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 31);
-            textBox3.TabIndex = 4;
+            txtProdStock.Location = new Point(352, 210);
+            txtProdStock.Margin = new Padding(2);
+            txtProdStock.Name = "txtProdStock";
+            txtProdStock.Size = new Size(85, 23);
+            txtProdStock.TabIndex = 7;
             // 
             // lblProductPrice
             // 
             lblProductPrice.AutoSize = true;
-            lblProductPrice.Location = new Point(45, 91);
+            lblProductPrice.Location = new Point(263, 169);
+            lblProductPrice.Margin = new Padding(2, 0, 2, 0);
             lblProductPrice.Name = "lblProductPrice";
-            lblProductPrice.Size = new Size(111, 25);
+            lblProductPrice.Size = new Size(78, 15);
             lblProductPrice.TabIndex = 5;
-            lblProductPrice.Text = "ProductPrice";
+            lblProductPrice.Text = "Product Price";
             // 
             // lblProductStock
             // 
             lblProductStock.AutoSize = true;
-            lblProductStock.Location = new Point(45, 146);
+            lblProductStock.Location = new Point(263, 218);
+            lblProductStock.Margin = new Padding(2, 0, 2, 0);
             lblProductStock.Name = "lblProductStock";
-            lblProductStock.Size = new Size(122, 25);
+            lblProductStock.Size = new Size(81, 15);
             lblProductStock.TabIndex = 6;
             lblProductStock.Text = "Product Stock";
             // 
+            // lblProductName
+            // 
+            lblProductName.AutoSize = true;
+            lblProductName.Location = new Point(263, 127);
+            lblProductName.Name = "lblProductName";
+            lblProductName.Size = new Size(84, 15);
+            lblProductName.TabIndex = 11;
+            lblProductName.Text = "Product Name";
+            // 
             // frmAddProduct
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(846, 568);
+            Controls.Add(lblProductName);
             Controls.Add(lblProductStock);
             Controls.Add(lblProductPrice);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(lblProductName);
+            Controls.Add(txtProdStock);
+            Controls.Add(txtProdPrice);
+            Controls.Add(txtProdName);
             Controls.Add(btnAddProduct);
+            Margin = new Padding(2);
             Name = "frmAddProduct";
             Text = "New Product";
             ResumeLayout(false);
@@ -119,11 +123,11 @@
         #endregion
 
         private Button btnAddProduct;
-        private Label lblProductName;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtProdName;
+        private TextBox txtProdPrice;
+        private TextBox txtProdStock;
         private Label lblProductPrice;
         private Label lblProductStock;
+        private Label lblProductName;
     }
 }
