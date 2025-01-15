@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roberts_RepositoryClassLibraryLab", "Roberts_RepositoryClassLibraryLab\Roberts_RepositoryClassLibraryLab.csproj", "{B003DCC6-71CA-4B58-A80E-1ACCAF0240D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roberts_RepositoryClassLibraryLab", "Roberts_RepositoryClassLibraryLab\Roberts_RepositoryClassLibraryLab.csproj", "{B003DCC6-71CA-4B58-A80E-1ACCAF0240D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roberts_RepositoryWinformsIntroLab", "Roberts_RepositoryWinformsIntroLab\Roberts_RepositoryWinformsIntroLab.csproj", "{39E760A5-B52F-4EFD-A6D3-A3DF91D9292A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{B003DCC6-71CA-4B58-A80E-1ACCAF0240D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B003DCC6-71CA-4B58-A80E-1ACCAF0240D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B003DCC6-71CA-4B58-A80E-1ACCAF0240D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E760A5-B52F-4EFD-A6D3-A3DF91D9292A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E760A5-B52F-4EFD-A6D3-A3DF91D9292A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E760A5-B52F-4EFD-A6D3-A3DF91D9292A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E760A5-B52F-4EFD-A6D3-A3DF91D9292A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31F3FEAD-D7BD-4D97-912C-9A7E2A66E029}
 	EndGlobalSection
 EndGlobal
