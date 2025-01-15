@@ -52,7 +52,7 @@ namespace Roberts_RepositoryClassLibraryLab
                 connection.Open();
                 using (var command = new SqlCommand("SELECT * FROM Product WHERE ProductID = @ProductID", connection))
                 {
-                    connection.Parameters.AddWithValue("@ProductID", id);
+                    command.Parameters.AddWithValue("@ProductID", ID);
                     using (var reader = command.ExecuteReader())
                     {
                         if (reader.Read())
@@ -103,11 +103,12 @@ namespace Roberts_RepositoryClassLibraryLab
                     command.Parameters.AddWithValue("@Name", product.Name);
                     command.Parameters.AddWithValue("@Price",product.Price);
                     command.Parameters.AddWithValue("@STock",product.Stock);
-                    command.ExecuteNonQuery("@ProductID", product.ProductID);
                     command.ExecuteNonQuery();
+                   
                 }
             }
         }
+
         public void DeleteProduct (int id)
         {
             using (var connection = _connectionString)
@@ -121,6 +122,6 @@ namespace Roberts_RepositoryClassLibraryLab
                 }
             }
         }
-      
+
     }
 }

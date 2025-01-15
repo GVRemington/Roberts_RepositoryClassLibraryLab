@@ -8,11 +8,11 @@ namespace Roberts_RepositoryClassLibraryLab
 {
     public interface IProductRepository
     {
-        IEnumerable<IProductRepository> GetAllProducts();
+        IEnumerable<Product> GetAllProducts();
         Product GetProductByID(int id);
         void AddProduct(Product product);
         void UpdateProduct(Product product);
-        void DeleteProduct(Product product);
+        void DeleteProduct(int id);
 
     }
 }
